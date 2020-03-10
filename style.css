@@ -6,9 +6,10 @@
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   align-items: center;
+  justify-items: center;
   height: 100vh;
 }
 
@@ -25,7 +26,6 @@ h1 {
 
 .logo {
   animation: moveIn 1s ease-in-out forwards 1;
-  justify-self: flex-end;
   width: 5vw;
 
 }
