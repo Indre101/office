@@ -7,7 +7,7 @@
 .container {
   overflow: scroll;
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
 
   height: 95vh;
 }
@@ -18,6 +18,24 @@
   align-items: center;
   justify-items: center;
   height: inherit;
+}
+
+.charcterPage {
+  scroll-snap-align: start;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(auto, 33%));
+}
+
+.charcterPage h2 {
+  grid-area: 1/1 / span 1 / span 3;
+}
+
+.charcterPage img:first-child {
+  grid-area: 2/1 / span 1 / span 1;
+}
+
+.charcterPage img:nth-child(4) {
+  grid-area: 4/2 / span 1 / span 1;
 }
 
 h1 {
