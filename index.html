@@ -13,7 +13,7 @@
         <ul>
           <li><a href="#Michael">Michael</a></li>
           <li><a href="#Dwight">Dwight</a></li>
-          <li><a href="#MichaelAndDwight">Michael and Dwigh</a>t</li>
+          <li><a href="#qoutes">Quotes</a>t</li>
         </ul>
       </nav>
     </header>
@@ -38,9 +38,9 @@
         <img src="./images/mgs-5.png" alt="Michael Gary Scott" />
       </article>
 
-      <article id="Dwight" class="inner charcterPage">
+      <article id="Dwight" class="inner charcterPage" data-character="dwight">
         <h2>Dwight Kurt Schrute III</h2>
-        <img src="./images/dwight-2.jpg" alt="Dwight Kurt Schrute III" />
+        <img src="./images/dwight-2.png" alt="Dwight Kurt Schrute III" />
         <div class="text">
           <p>
             Actually, dwight schrute wears dorky glasses, which also be called
@@ -49,32 +49,27 @@
           </p>
         </div>
         <img src="./images/dwight-3.png" alt="Dwight Kurt Schrute III" />
-        <img src="./images/dwight-4.jpg" alt="Dwight Kurt Schrute III" />
+        <img src="./images/dwight-4.png" alt="Dwight Kurt Schrute III" />
       </article>
-      <article id="MichaelAndDwight" class="inner charcterPage">
-        <h2>Michael and Dwight</h2>
+      <article id="qoutes" class="inner charcterPage" data-character="qoutes">
+        <h2>Quotes</h2>
         <div class="imageSliderContainer">
-          <div class="imageSlider">
-            <div id="qute1" class="quote">
-              <q
-                >Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Adipisci delectus illum eaque laborum, alias commodi!</q
-              >
-              <h4>-Michael</h4>
-            </div>
-
-            <div id="qute2" class="quote">
-              <q
-                >Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Adipisci delectus illum eaque laborum, alias commodi!</q
-              >
-              <h4>-Dwight</h4>
-            </div>
+          <div class="quoteSlider">
+            <template class="quoteTemplate">
+              <div id="" class="quote">
+                <q
+                  >Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Adipisci delectus illum eaque laborum, alias commodi!</q
+                >
+                <h4>-Michael</h4>
+              </div>
+            </template>
           </div>
 
           <div class="dashes">
-            <a href="#qute1"><div class="dash"></div></a>
-            <a href="#qute2"><div class="dash"></div></a>
+            <template class="dashTemplate">
+              <a href="#qute1"><div class="dash"></div></a>
+            </template>
           </div>
         </div>
       </article>

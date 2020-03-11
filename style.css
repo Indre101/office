@@ -10,7 +10,7 @@
 .container {
   overflow: scroll;
   scroll-behavior: smooth;
-  scroll-snap-type: y proximity;
+  /* scroll-snap-type: y proximity; */
   height: 95vh;
 }
 
@@ -38,6 +38,30 @@
   background-position: left;
   background-size: 50%;
   background-repeat: no-repeat;
+}
+
+
+[data-character="dwight"] {
+  background-image: url(./images/dwight-badge.png);
+  background-color: #edd27d;
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: left;
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
+
+
+[data-character="qoutes"] {
+  background-image: url(./images/dwmch-1.gif);
+  background-size: contain;
+  background-size: 10vw;
+  background-color: white;
+  background-blend-mode: luminosity;
+}
+
+[data-character="qoutes"] h2 {
+  color: white;
 }
 
 .charcterPage h2 {
@@ -121,14 +145,16 @@ li a {
 
   flex-direction: column;
   align-items: center;
-
   justify-self: center;
   align-self: flex-start;
   display: flex;
   justify-content: center;
+  background-color: white;
+  padding: 4vh 0;
+  width: 80%;
 }
 
-.imageSlider {
+.quoteSlider {
   display: flex;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
@@ -136,7 +162,7 @@ li a {
   max-width: 50%;
 }
 
-.imageSlider img {
+.quoteSlider img {
   height: 70vh;
   object-fit: contain;
 }
