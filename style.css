@@ -1,20 +1,16 @@
-/* @import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css?family=Oxanium&display=swap'); */
 @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap");
 
 * {
   padding: 0;
   margin: 0;
-  /* font-family: "Oxanium", cursive; */
-  /* font-family: 'Ubuntu', sans-serif; */
   font-family: "Source Code Pro", monospace;
+  box-sizing: border-box;
 }
 
 .container {
   overflow: scroll;
   scroll-behavior: smooth;
   scroll-snap-type: y proximity;
-
   height: 95vh;
 }
 
@@ -29,7 +25,8 @@
 .charcterPage {
   scroll-snap-align: start;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(auto, 33%));
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(auto, 30vw));
 }
 
 .charcterPage h2 {
@@ -100,4 +97,40 @@ li a {
   text-decoration: none;
   color: black;
   font-size: 2vh;
+}
+
+.imageSliderContainer {
+  grid-area: 2/1 / span 1 / span 3;
+
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+}
+
+.imageSlider {
+  display: flex;
+  scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+  max-width: 50%;
+}
+
+.imageSlider img {
+  height: 70vh;
+  object-fit: contain;
+}
+
+.quote {
+  scroll-snap-align: start;
+  display: flex;
+  min-width: 100%;
+  height: 200px;
+  border: 1px solid;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3vw;
+}
+
+.quote h4 {
+  margin-top: 2vw;
 }
