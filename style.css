@@ -14,7 +14,14 @@
   height: 95vh;
 }
 
+nav ul li {
+  transition: background-color 0.3s ease-in-out;
+  padding: 0.4vh;
+}
 
+nav ul li:hover {
+  background-color: rgba(211, 211, 211, 0.609);
+}
 
 .inner {
   display: grid;
