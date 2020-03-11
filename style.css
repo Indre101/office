@@ -29,9 +29,26 @@
   grid-template-columns: repeat(auto-fill, minmax(auto, 30vw));
 }
 
+
+[data-character="michael"] {
+  background-image: url(./images/mug.jpg);
+  background-color: aliceblue;
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: left;
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
+
 .charcterPage h2 {
   grid-area: 1/1 / span 1 / span 3;
 }
+
+.charcterPage img {
+  filter: drop-shadow(1px 2px 1px lightgrey);
+}
+
+
 
 .charcterPage img:nth-of-type(1) {
   height: 20vh;
@@ -106,7 +123,7 @@ li a {
   align-items: center;
 
   justify-self: center;
-  align-self: center;
+  align-self: flex-start;
   display: flex;
   justify-content: center;
 }
@@ -144,10 +161,12 @@ li a {
   display: flex;
   justify-content: space-evenly;
   width: 50%;
+  margin-top: 2vh;
 }
 
 .dash {
-  width: 15px;
-  height: 15px;
-  background-color: red;
+  width: 2vh;
+  height: 2vh;
+  background-color: lightgray;
+  box-shadow: 1px 1px 1px 1px darkgrey;
 }
